@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F8F8FF;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+}
+
+#container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    padding: 20px;
+}
+
+h1 {
+    color: #5bb54b;
+}
+
+textarea[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 800px;
+    border-radius: 24px;
+    margin-right: 4rem;
+    gap: 1px;
+    margin: 0;
+    resize: none;
+    font-family: 'Manrope', sans-serif;
+}
+
+select,
+button {
+    padding: 1px;
+    font-size: 14px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.botaoArea{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+   margin-left: 10px;
+   justify-content: center;
+}
+
+button {
+    background-color:transparent;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    margin-left:10px;
+background-image: url(../assets/icon/icons8-soja-48.png);
+    transition: 0.3s;
+    background-repeat: no-repeat;
+}
+
+button:hover {
+    background-color: #EFB661;
+    transition: 0.3s;
+}
+
+#historico {
+    flex-grow: 1;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 1200px;
+    overflow-y: auto;
+   height: calc(100vh - 200px);
+}
+
+.pergunta {
+    background-color: green;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: left;
+    color: white;
+}
+
+.resposta {
+    background-color: #0000;
+    color: black;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
