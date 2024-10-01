@@ -1,208 +1,174 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BobIA</title>
+    <title>TIVAT - IA</title>
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <link rel="stylesheet" href="./css/ia.css">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./sidebar.css">
 </head>
 
 <body>
-    <aside class="side-bar">
-        <div class="logo-wrapper">
-            <img src="./assets/img/logo-soysense.png" />
-        </div>
-        <br>
-        <div class="profile-wrapper">
-            <div class="profile-picture">
-                <img src="../assets/img/profile.jpg" />
+    <section class="container">
+        <aside class="sidebar">
+            <div class="imgDash" id="theme-dash">
+                <img src="./assets/img/LOGO.png" id="theme-logo" alt="Logo TIVAT">
             </div>
-            <span>Empresa</span>
-            <h4>SPTech School</h4>
-        </div>
-        <div class="line-side-bar"></div>
-        <nav class="nav-side-bar">
-            <ul class="accordion-menu">
-                <li class="nav-normal-item dash-on">
-                    <a href="./dashboard.html">
-                        <img width="17" height="17"
-                            src="https://img.icons8.com/material-outlined/24/FFFFFF/dashboard-layout.png"
-                            alt="dashboard-layout" />
-                        Dashboard
-                    </a>
-                </li>
-                <li class="accordion-item">
-                    <div class="accordion-item-header">
-                        <img width="20" height="20"
-                            src="https://img.icons8.com/material-outlined/24/FFFFFF/maintenance.png"
-                            alt="maintenance" />
-                        <span>Gerenciar</span>
+            <br>
+            <div class="divMenu">
+                <div class="menu-item">
+                    <img class="icon" src="./assets/icon/Dash.png" alt="Dashboards Icon">
+                    Dashboards
+                </div>
+                <a class="linkPag" href="./equipes.html">
+                    <div class="menu-item">
+                        <img class="icon" src="./assets/icon/Equipes.png" alt="Equipes Icon">
+                        Equipes
                     </div>
-                    <ul class="accordion-submenu">
-                        <li class="accordion-subitem">
-                            <a href=""><img width="10" style="transform: rotate(270deg);" height="10"
-                                    src="https://img.icons8.com/material-outlined/24/FFFFFF/left-down2.png"
-                                    alt="left-down2" />&nbsp; Complexo</a>
-                        </li>
-                        <li class="accordion-subitem">
-                            <a href=""><img width="10" style="transform: rotate(270deg);" height="10"
-                                    src="https://img.icons8.com/material-outlined/24/FFFFFF/left-down2.png"
-                                    alt="left-down2" />&nbsp;Sensor</a>
-                        </li>
-                        <li class="accordion-subitem">
-                            <a href="./gerenciar-monitor.html"><img width="10" style="transform: rotate(270deg);"
-                                    height="10" src="https://img.icons8.com/material-outlined/24/FFFFFF/left-down2.png"
-                                    alt="left-down2" />&nbsp;Gestor</a>
-                        </li>
-                        <li class="accordion-subitem">
-                            <a href="./gerenciar-funcionario.html"><img width="10" style="transform: rotate(270deg);"
-                                    height="10" src="https://img.icons8.com/material-outlined/24/FFFFFF/left-down2.png"
-                                    alt="left-down2" />&nbsp;Funcionário</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="accordion-item">
-                    <div class="accordion-item-header alerta-item">
-                        <img width="17" height="17" src="https://img.icons8.com/material-outlined/24/FFFFFF/address.png"
-                            alt="address" />
-                        <span>Complexo</span>
-                    </div>
-                    <ul class="accordion-submenu">
-                        <li class="accordion-subitem ">
-                            <a href="fazenda.html" class="alerta-item"><img width="10"
-                                    style="transform: rotate(270deg);" height="10"
-                                    src="https://img.icons8.com/material-outlined/24/FFFFFF/left-down2.png"
-                                    alt="left-down2" />&nbsp;Fazenda X</a>
-                        </li>
-                        <li class="accordion-subitem">
-                            <a href="fazenday.html"><img width="10" style="transform: rotate(270deg);" height="10"
-                                    src="https://img.icons8.com/material-outlined/24/FFFFFF/left-down2.png"
-                                    alt="left-down2" />&nbsp;Fazenda Y</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="accordion-item">
-                    <div class="accordion-item-header">
-                        <img width="17" height="17"
-                            src="https://img.icons8.com/material-outlined/24/FFFFFF/document--v1.png"
-                            alt="document--v1" />
-                        <span>Relatório</span>
-                    </div>
-                    <ul class="accordion-submenu">
-                        <li class="accordion-subitem">
-                            <a href=""><img width="10" style="transform: rotate(270deg);" height="10"
-                                    src="https://img.icons8.com/material-outlined/24/FFFFFF/left-down2.png"
-                                    alt="left-down2" />&nbsp;Desempenho</a>
-                        </li>
-                        <li class="accordion-subitem">
-                            <a href=""><img width="10" style="transform: rotate(270deg);" height="10"
-                                    src="https://img.icons8.com/material-outlined/24/FFFFFF/left-down2.png"
-                                    alt="left-down2" />&nbsp;Rentabilidade</a>
-                        </li>
-                        <li class="accordion-subitem">
-                            <a href=""><img width="10" style="transform: rotate(270deg);" height="10"
-                                    src="https://img.icons8.com/material-outlined/24/FFFFFF/left-down2.png"
-                                    alt="left-down2" />&nbsp;Anomalias</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-normal-item">
-                    <a href="">
-                        <img width="17" height="17"
-                            src="https://img.icons8.com/material-outlined/24/FFFFFF/fine-print.png" alt="fine-print" />
-                        Benchmarking
-                    </a>
-                </li>
-                <li class="accordion-item">
-                    <div class="accordion-item-header">
-                        <img width="17" height="17"
-                            src="https://img.icons8.com/material-outlined/24/FFFFFF/settings--v1.png"
-                            alt="settings--v1" />
-                        <span>Configuração</span>
-                    </div>
-                    <ul class="accordion-submenu">
-                        <li class="accordion-subitem">
-                            <a href=""><img width="10" style="transform: rotate(270deg);" height="10"
-                                    src="https://img.icons8.com/material-outlined/24/FFFFFF/left-down2.png"
-                                    alt="left-down2" />&nbsp;Perfil</a>
-                        </li>
-                        <li class="accordion-subitem">
-                            <a href=""><img width="10" style="transform: rotate(270deg);" height="10"
-                                    src="https://img.icons8.com/material-outlined/24/FFFFFF/left-down2.png"
-                                    alt="left-down2" />&nbsp;Personalizar</a>
-                        </li>
-                        <li class="accordion-subitem">
-                            <a href=""><img width="10" style="transform: rotate(270deg);" height="10"
-                                    src="https://img.icons8.com/material-outlined/24/FFFFFF/left-down2.png"
-                                    alt="left-down2" />&nbsp;Suporte</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-        <div class="footer-aside">
-            <div class="logout-container">
-                <a href="#">
-                    <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/f13939/logout-rounded.png"
-                        alt="logout-rounded" />
-                    Sair
                 </a>
+                <div class="menu-item">
+                    <img class="icon" src="./assets/icon/Notificações.png" alt="Notificações Icon">
+                    Notificações
+                </div>
+                <div class="menu-item">
+                    <img class="icon" src="./assets/icon/calendario (1) 1.png" alt="Suporte - IA Icon">
+                    Eventos
+                </div>
+                <div class="menu-item">
+                    <img class="icon" src="./assets/icon/Suporte.png" alt="Suporte - IA Icon">
+                    Suporte - IA
+                </div>
+                <div class="menu-item">
+                    <img class="icon" src="./assets/icon/Configurações.png" alt="Configurações Icon">
+                    Configurações
+                </div>
+            </div>
+            <div class="itemExit">
+                <p class="pSidebar">Sair</p>
+                <img class="iconE" src="./assets/icon/Sair.png" alt="Sair Icon">
+            </div>
+        </aside>
+
+        <header class="headerDash">
+            <div class="headerRight">
+                <div class="funcionalidadesHeader" id="theme-toggle">
+                    <img src="./assets/icon/Light.png" alt="Tema Claro" id="theme-icon">
+                </div>
+                <div class="vertical"></div>
+                <div class="funcionalidadesHeader" id="theme-header1">
+                    <img src="./assets/icon/image 35.png" id="theme-noti" alt="Notificações">
+                </div>
+                <div class="funcionalidadesHeader" id="theme-header2">
+                    <img src="./assets/icon/image 34.png" id="theme-confg" alt="Configurações">
+                </div>
+                <div class="vertical"></div>
+                <div class="funcionalidadesHeader">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </header>
+
+        <div class="content">
+            <h1 class="h1Tivat">TIVAT</h1>
+            <p class="pTivat">Saiba como nossa inteligência artificial pode te ajudar</p>
+            <div class="input-container">
+                <input id="pergunta" type="text" placeholder="Digite a sua dúvida...">
+                <button class="button" onclick="gerarResposta()">
+                    <span class="circle1"></span>
+                    <span class="circle2"></span>
+                    <span class="circle3"></span>
+                    <span class="circle4"></span>
+                    <span class="circle5"></span>
+                    <span class="text">Submit</span>
+                </button>
+            </div>
+            <div id="historico" class="historico">
+                <img id="placeholder-image" src="./assets/img/imageTivat.png" >
             </div>
         </div>
-    </aside>
+    </section>
 
-    <div id="container">
-        <h1>SoyTech Solutions</h1>
-        <hr>
-        <div id="historico"></div>
-        <div class="input-container">
-            <div class="botaoArea">
-            <textarea id="pergunta" type="text" placeholder="Digite a pergunta..."></textarea>
-            <button  onclick="gerarResposta()"></button>
-        </div>
-        </div>
-    </div>
     <script>
-
         async function gerarResposta() {
-            const pergunta = document.getElementById('pergunta').value;
-            const response = await fetch('/perguntar', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ pergunta })
-            });
+    const pergunta = document.getElementById('pergunta').value;
 
-            const data = await response.json();
-            const historico = document.getElementById('historico');
+    // Remove a imagem de placeholder se ela existir
+    const placeholderImage = document.getElementById('placeholder-image');
+    if (placeholderImage) {
+        placeholderImage.remove();
+    }
 
-            const perguntaDiv = document.createElement('div');
-            perguntaDiv.classList.add('pergunta');
-            perguntaDiv.innerText = pergunta;
+    const response = await fetch('/perguntar', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ pergunta })
+    });
 
-            const respostaDiv = document.createElement('div');
-            respostaDiv.classList.add('resposta');
-            respostaDiv.innerText = data.resultado;
+    const data = await response.json();
+    const historico = document.getElementById('historico');
 
-            historico.appendChild(perguntaDiv);
-            historico.appendChild(respostaDiv);
+    const perguntaDiv = document.createElement('div');
+    perguntaDiv.classList.add('pergunta');
+    perguntaDiv.innerText = pergunta;
 
-            document.getElementById('pergunta').value = '';
+    const respostaDiv = document.createElement('div');
+    respostaDiv.classList.add('resposta');
+    respostaDiv.innerText = data.resultado;
 
-            historico.scrollTop = historico.scrollHeight;
+    historico.appendChild(perguntaDiv);
+    historico.appendChild(respostaDiv);
 
-            // const resposta = document.getElementById('resposta');
-            // resposta.style.display = 'block';
-            // resposta.innerText = data.resultado;
-            // resposta.scrollIntoView({behavior: 'smooth'});
-            // document.getElementById('resposta').innerText = data.resultado;
-        }
+    document.getElementById('pergunta').value = '';
+    historico.scrollTop = historico.scrollHeight;
 
+}
     </script>
 
-</body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    const toggleButton = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+    const dashButton = document.getElementById('theme-dash');
+    const themelogo = document.getElementById('theme-logo');
+    const themenoti = document.getElementById('theme-noti');
+    const themeconfg = document.getElementById('theme-confg');
+    const body = document.body;
 
+    // Verifica o tema atual ao carregar a página
+    if (localStorage.getItem('theme') === 'dark') {
+        body.classList.add('dark-mode');
+        themeIcon.src = './assets/icon/Moon.png';
+        themelogo.src = './assets/img/LOGO-Dark.png';
+        themenoti.src = './assets/icon/icons8-sino-50.png';
+        themeconfg.src = './assets/icon/icons8-configuração-50.png';
+    }
+
+    function toggleTheme() {
+        body.classList.toggle('dark-mode');
+
+        if (body.classList.contains('dark-mode')) {
+            themeIcon.src = './assets/icon/Moon.png';
+            themelogo.src = './assets/img/LOGO-Dark.png';
+            themenoti.src = './assets/icon/icons8-sino-50.png';
+            themeconfg.src = './assets/icon/icons8-configuração-50.png';
+            localStorage.setItem('theme', 'dark');
+        } else {
+            themeIcon.src = './assets/icon/Light.png';
+            themelogo.src = './assets/img/LOGO.png';
+            themenoti.src = './assets/icon/image 35.png';
+            themeconfg.src = './assets/icon/image 34.png';
+            localStorage.setItem('theme', 'light');
+        }
+    }
+
+    toggleButton.addEventListener('click', toggleTheme);
+    dashButton.addEventListener('click', toggleTheme);
+});
+
+    </script>
+</body>
 </html>
